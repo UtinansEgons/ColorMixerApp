@@ -75,7 +75,25 @@ namespace ColorMixerApp
         public void changeBackground()
         {
             MixedRectangle.Background = new SolidColorBrush(Color.FromRgb(redColorValue, blueColorValue, greenColorValue));
-            
+        }
+
+
+        private void GreenSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            byte color = Convert.ToByte(GreenSlider.Value);
+            GreenValue.Text = color.ToString();
+        }
+
+        private void BlueSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            byte color = Convert.ToByte(BlueSlider.Value);
+            BlueValue.Text = color.ToString();
+        }
+
+        private void RedSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            byte color = Convert.ToByte(RedSlider.Value);
+            RedValue.Text = color.ToString();
         }
     }
 }

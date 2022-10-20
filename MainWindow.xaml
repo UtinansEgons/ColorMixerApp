@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ColorMixerApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Color mixer app" Height="450" Width="800">
     <Grid x:Name="MixedRectangle">
         <Rectangle x:Name="RedRectangle" HorizontalAlignment="Left" Height="200" Margin="35,92,0,0" Stroke="Black" VerticalAlignment="Top" Width="200"/>
         <Rectangle x:Name="GreenRectangle" HorizontalAlignment="Center" Height="200" Margin="0,92,0,0" Stroke="Black" VerticalAlignment="Top" Width="200"/>
@@ -13,6 +13,9 @@
         <TextBox x:Name="RedValue" HorizontalAlignment="Left" Margin="35,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="28" TextChanged="RedValue_TextChanged"/>
         <TextBox x:Name="GreenValue" HorizontalAlignment="Center" Margin="0,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="28" TextChanged="GreenValue_TextChanged"/>
         <TextBox x:Name="BlueValue" HorizontalAlignment="Left" Margin="575,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="28" TextChanged="BlueValue_TextChanged"/>
+        <Slider x:Name="BlueSlider" HorizontalAlignment="Left" Margin="575,323,0,0" VerticalAlignment="Top" Width="200" Maximum="255" SmallChange="1" Background="#FF0003FF" ValueChanged="BlueSlider_ValueChanged"/>
+        <Slider x:Name="GreenSlider" HorizontalAlignment="Center" Margin="0,323,0,0" VerticalAlignment="Top" Width="200" Maximum="255" SmallChange="1" Background="#FF2DFF00" ValueChanged="GreenSlider_ValueChanged"/>
+        <Slider x:Name="RedSlider" HorizontalAlignment="Left" Margin="35,323,0,0" VerticalAlignment="Top" Width="200" Maximum="255" SmallChange="1" Background="Red" ValueChanged="RedSlider_ValueChanged"/>
 
     </Grid>
 </Window>
